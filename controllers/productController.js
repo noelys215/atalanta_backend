@@ -56,7 +56,9 @@ const createProduct = asyncHandler(async (req, res) => {
 			{ quantity: 4, size: 'SM' },
 			{ quantity: 3, size: 'MD' },
 		],
-		image: ['/images/sample.jpg'],
+		image: [
+			'https://res.cloudinary.com/dshviljjs/image/upload/v1671069321/Atalanta%20Uploads/STATIC/sample_rpm8f4.jpg',
+		],
 	});
 
 	const createdProduct = await product.save();
